@@ -7,6 +7,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Homepage</title>
     <style>
+        @media only screen and (max-width: 800px) {
+    .items {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .active {
+        color: red !important;
+    }
+    .logo img {
+        width: 50px;
+        height: 50px;
+        border-radius: 25px;
+        outline: 3px solid red;
+    }
+    nav {
+        padding: 1rem 0.5rem; /* Adjust padding as needed */
+    }
+    .row {
+        grid-template-columns: 1fr;
+    }
+    .learn-more {
+        align-self: start;
+        margin: 1rem 0px;
+    }
+}
+
         .adsense {
             margin-top: 20px;
             /* Add your Google AdSense ad code here */
